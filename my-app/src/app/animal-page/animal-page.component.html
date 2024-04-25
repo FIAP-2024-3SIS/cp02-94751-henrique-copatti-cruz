@@ -1,0 +1,3 @@
+<div *ngFor="let animal of animals" [ngClass]="{ 'gray-background': animal.sexo === 'macho', 'blue-background': animal.sexo === 'femea' }">
+    <app-animal-item [animal]="animal"></app-animal-item>
+</div>
